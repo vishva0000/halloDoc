@@ -8,7 +8,8 @@ var ft=0;
 
 window.onload=function(event){
     sun.style.display="none";
-    h.style.display = "none"
+    h.style.display = "none";
+
 }
 
 function darkMode(){
@@ -28,7 +29,16 @@ function darkMode(){
     }
 
 }
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+        myModal.show()
+        let hidemodal = document.getElementById('hidemodal');
+        hidemodal.addEventListener('click', () => {
+            myModal.hide();
+        })
 
+function back(){
+  window.history.back()
+}
 
 
 function togglePass() {

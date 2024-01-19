@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Create Patient Request</title>
+    <title>Create Family Friend Request</title>
   </head>
   <body class="bg-light">
     <header class="bg-white shadow" style="height: 70px">
@@ -59,6 +59,7 @@
         </svg>
       </button>
     </header>
+
     <div class="d-flex justify-content-center">
       <div class="mt-2 shadow p-3 mb-5 bg-white rounded">
         <div class="d-flex justify-content-end">
@@ -66,14 +67,87 @@
         </div>
         <form action="">
           <div class="container-fluid">
-            <h4>Patient Information</h4>
+            <h4>Business Information</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Your First Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Your Last Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="(201) 555-0123"
+                    style="height: 58px"
+                  />
+                  <label for="phone"></label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Your Email</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Hotel/Property Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput"
+                    >Case Number &lpar;Optional&rpar;</label
+                  >
+                </div>
+              </div>
+            </div>
 
+            <h4>Patient Information</h4>
             <div class="form-floating">
               <textarea
                 class="form-control"
                 placeholder="Leave a comment here"
                 id="floatingTextarea"
                 style="height: 100px"
+                rows="5"
               ></textarea>
               <label for="floatingTextarea"
                 >Enter Brief Details Of Symptoms</label
@@ -130,15 +204,15 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="mb-3">
+                <div class="form-floating mb-3">
                   <input
-                    type="tel"
+                    type="text"
+                    id="mobile_code"
                     class="form-control"
-                    id="phone"
-                    placeholder="(201) 555-0123"
-                    style="height: 58px"
+                    placeholder="Phone Number"
+                    name="name"
                   />
-                  <label for="phone"></label>
+                  <label for="floatingInput">Phone Number</label>
                 </div>
               </div>
             </div>
@@ -202,32 +276,7 @@
                 </div>
               </div>
             </div>
-            <h4>&lpar;Optional&rpar; Upload Photo or Document</h4>
-            <div class="row">
-              <div class="col-md-12 bg-light">
-                <div class="mb-3">
-                  <div
-                    class="d-flex"
-                    onclick="document.getElementById('choose-file').click()"
-                    style="cursor: pointer"
-                  >
-                    <label
-                      class="col-8 col-md-10 col-lg-11 upload"
-                      id="fileLabel"
-                      >Select File</label
-                    >
-                    <button
-                      class="col-4 col-md-2 col-lg-1 btn btn-info uploadbtn text-white"
-                    >
-                      <img src="./Images/cloud-upload-icon.svg" alt="" />
-                      Upload
-                    </button>
-                  </div>
-                </div>
 
-                <input type="file" style="display: none" id="choose-file" />
-              </div>
-            </div>
             <div class="d-flex justify-content-end">
               <button type="button" class="btn submit m-2">Submit</button>
               <button type="button" class="btn btn-light m-2">Cancle</button>

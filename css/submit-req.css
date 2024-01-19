@@ -24,21 +24,28 @@ body{
     border: 1px solid #55689a;
     background-color: #e9eaef;
     color: #55689a;
+    cursor: pointer;
   }
   .family-btn{
     border: 1px solid #5ea6c4;
     background-color: #e5f2f8;
     color: #5ea6c4;
+    cursor: pointer;
+
   }
   .concierge-btn{
     border: 1px solid #42803c;
     background-color: #e9f0e8;
     color: #42803c;
+    cursor: pointer;
+
   }
   .business-btn{
     border: 1px solid #af246f;
     background-color: #f7e6ee;
     color: #af246f;
+    cursor: pointer;
+
   }
   .s-backgroung{
     background-color: #F1EFEF;

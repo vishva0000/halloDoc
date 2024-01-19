@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Patient Login page</title>
   </head>
-  <body>
+  <body class="bg-light">
     <!-- header -->
     <header>
       <div class="d-flex justify-content-center">
@@ -55,7 +55,7 @@
     <div class="d-flex justify-content-center mt-5 main">
       <div class="mt-5 pt-5">
         <!-- <div class="position-absolute top-50 start-50 translate-middle"> -->
-        <a style="text-decoration: none; color: #7bd3ea" href="">&lt Back</a>
+        <button class="back-btn rounded" onclick="back()">&lt Back</button>
         <h2 class="text-center">Login Into Your Account</h2>
         <br />
         <!-- <div>
@@ -164,10 +164,10 @@
     </div>
 
     <!-- footer -->
-    <footer class="text-center footer">
-      <div class="d-inline-flex">
-        <p>Terms of condition | Privacy Policy</p>
-      </div>
+    <footer style="position: fixed; bottom: 0; width: 100%">
+      <p class="text-center m-2 pt-2 mb-4">
+        Terms for condition | Privacy Policy
+      </p>
     </footer>
 
     <script
